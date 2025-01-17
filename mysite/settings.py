@@ -136,6 +136,10 @@ if not DEBUG:
     # and renames the files with unique names for each version of that file for long term caching
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # For development
+DEFAULT_FROM_EMAIL = 'noreply@example.com'
+CONTACT_EMAIL = 'your-email@example.com'  # Replace with your email address
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
