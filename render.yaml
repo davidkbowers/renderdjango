@@ -14,8 +14,8 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysitedb
-          property: connectionString
+          name: afterdb
+          property: postgresql://dave:k7SJHR0suf5mPANcY601EMKduAuecTLv@dpg-cu4s8dl6l47c73ddvieg-a/afterglow_idif
       - key: SECRET_KEY
         generateValue: true
       - key: WEB_CONCURRENCY
